@@ -45,6 +45,18 @@ function blueClear(){
     document.getElementById("rcardb").style.display="none";
     document.getElementById("ycardb").style.display="none";
 }
+function redWin(){
+ all.style="none";
+}
+function blueWin(){
+ all.style="none";
+}
+function tie(){
+ all.style="none";
+}
+function field(){
+ all.style= "block";
+}
 window.onload = function () {
     var fiveMinutes = 60 * 2.49,
         display = document.querySelector('#time');
@@ -76,6 +88,18 @@ window.onload = function () {
         document.getElementById("clrb").addEventListener("click", function() {
             blueClear();
         });
+    document.getElementById("rv1").addEventListener("click", function() {
+        redWin();
+    });
+    document.getElementById("bv1").addEventListener("click", function() {
+        blueWin();
+    });
+    document.getElementById("tv1").addEventListener("click", function() {
+        tie();
+    });
+    document.getElementById("fclr").addEventListener("click", function() {
+        field();
+    });
 };
 
 
