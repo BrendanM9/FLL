@@ -6,26 +6,47 @@
     <link rel="stylesheet" href="TMS.css">
   </head>
   <body>
-    <img src="IMG_0857.png" style="width:100%; height:100%; z-index:0;">
+    <button id="review" accesskey="1">Under Review</button>
+    <button id="go" accesskey="2">All Systems Go</button>
+    <img src="IMG_0857.png" style="z-index:0;" id="test-pattern">
     <div id="scorebar">
       <div id="blue">
         <div id="bluenumber">
         </div>
         <div id="bluepoints">
+          <div id="bluescore"><p>0</p></div>
         </div>
         <div id="bluebonus">
         </div>
       </div>
       <div id="timer">
+        <div id="under-review">Hello</div>
+        <div id="timebox"><div id="time">02:30</div></div>
       </div>
       <div id="red">
         <div id="rednumber">
         </div>
         <div id="redpoints">
+          <div id="redscore"><p>0</p></div>
         </div>
         <div id="redbonus">
         </div>
       </div>
     </div>
+    <script>
+      function underReview(){
+            document.getElementById("under-review").innerHTML = "Match Under Review"
+            document.getElementById("under-review").style.display = "block";
+      }
+      function allGo(){
+            document.getElementById("under-review").style.display = "none";
+      }
+      document.getElementById("review").addEventListener("click", function() {
+            underReview()
+        });
+        document.getElementById("go").addEventListener("click", function () {
+            allGo();
+        });
+    </script>
   </body>
 </html>

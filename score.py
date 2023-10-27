@@ -1,0 +1,76 @@
+class scoreCriteria:
+    equipmentInspectionBonus = 0
+    cinema3d = 0
+    theaterSceneN = 0
+    theaterSceneB = 0
+    theaterSceneP = 0
+    theaterSceneO = 0
+    theaterScene2 = 0
+    immersiveExperience = 0
+    masterpiece1 = 0
+    masterpiece2 = 0
+    augmentedRealityStatue = 0
+    musicConcertLightsAndSound1 = 0
+    musicConcertLightsAndSound2 = 0
+    hologramPerformer = 0
+    rollingCameraN = 0
+    rollingCameraD = 0
+    rollingCameraM = 0
+    rollingCameraL = 0
+    movieSet1 = 0
+    movieSet2 = 0
+    soundMixer0 = 0
+    soundMixer1 = 0
+    soundMixer2 = 0
+    soundMixer3 = 0
+    lightShowN = 0
+    lightShowY = 0
+    lightShowG = 0
+    lightShowB = 0
+    vrArtist1 = 0
+    vrArtist2 = 0
+    craftCreator1 = 0
+    craftCreator2 = 0
+    audienceDeliveryN1 = [1, 2, 3, 4, 5, 6, 7]
+    audienceDeliveryN2 = [1, 2, 3, 4, 5, 6, 7]
+    expertDeliveryN1 = [1, 2, 3, 4, 5]
+    precisionTokens = [1, 2, 3, 4, 5, 6]
+    graciousProfessionalism = [2, 3, 4]
+class points:
+    equipmentInspectionBonusS = [0, 20]
+    cinema3dS = [0, 20]
+    theaterScene1P = ["None", "Blue", "Pink", "Orange"]
+    theaterScene1S = [0, 10, 20, 30]
+    # Review following line!!
+    theaterScene2S = 0
+
+    immersiveExperienceS = [0, 20]
+    masterpiece1S = [0, 10]
+    masterpiece2S = [0, 20]
+    augmentedRealityStatueS = [0, 30]
+    musicConcertLightsAndSound1S = [0, 10]
+    musicConcertLightsAndSound2S = [0, 10]
+    hologramPerformerS = [0, 20]
+    rollingCameraP = ["None", "DBlue", "D & MBlue", "D, M, & LBlue"]
+    rollingCameraS = [0, 10, 20, 30]
+    movieSet1S = [0, 10]
+    movieSet2S = [0, 10]
+    soundMixerP = ["None", "One", "Two", "Three"]
+    soundMixerS = [0, 10, 20, 30]
+    lightShowP = ["None", "Yellow", "Green", "Blue"]
+    lightShowS = [0, 10, 20, 30]
+    vrArtist1S = [0, 10]
+    vrArtist2S = [0, 20]
+    craftCreator1S = [0, 10]
+    craftCreator2S = [0, 20]
+    audienceDelivery1P = [0, 1, 2, 3, 4, 5, 6, 7]
+    audienceDelivery1S = [0, 5, 10, 15, 20, 25, 30, 35]
+    audienceDelivery2P = [1, 2, 3, 4, 5, 6, 7]
+    audienceDelivery2S = [0, 5, 10, 15, 20, 25, 30, 35]
+    expertDelivery1P = [0, 1, 2, 3, 4, 5]
+    expertDelivery1S = [0, 10, 20, 30, 40, 50]
+    precisionTokensP = [0, 1, 2, 3, 4, 5, 6]
+    precisionTokensS = [0, 10, 15, 25, 35, 50, 50]
+    graciousProfessionalismS = [2, 3, 4]
+
+print(points.soundMixerS[1])
