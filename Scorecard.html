@@ -34,6 +34,12 @@
       </div>
     </div>
     <script>
+      var fiveMinutes = 60 * 2.49,
+        display = document.querySelector('#time');
+        
+      document.getElementById('start').addEventListener('click', function () { 
+          startTimer(fiveMinutes, display);
+      }); 
       function underReview(){
             document.getElementById("under-review").innerHTML = "Match Under Review"
             document.getElementById("under-review").style.display = "block";
@@ -47,6 +53,26 @@
         document.getElementById("go").addEventListener("click", function () {
             allGo();
         });
+      function stopTimer(){
+        display.innerHTML = "00:00";
+      }
+      function startTimer(duration, display) {
+        var timer = duration, minutes, seconds;
+        var intervalId = setInterval(function () {
+          minutes = parseInt(timer / 60, 10)
+          seconds = parseInt(timer % 60, 10);
+
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+
+          display.textContent = minutes + ":" + seconds;
+
+          if (--timer < 0) {
+            timer = duration;
+            display.innerHTML = "02:30";
+          }
+        }, 1000);
+      }
     </script>
   </body>
 </html>
