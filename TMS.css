@@ -24,7 +24,7 @@ body{
 }
 #redscore{
     position:absolute;
-    height:5%;
+    height:50px;
     width:5%;
     background-color:white;
     left:10%;
@@ -35,7 +35,7 @@ body{
 }
 #bluescore{
     position:absolute;
-    height:5%;
+    height:50px;
     width:5%;
     background-color:white;
     left:90%;
