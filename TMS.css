@@ -48,9 +48,9 @@ body{
     display: none;
     position: absolute;
     text-align: center;
-    left:525px;
+    left:40%;
     top:0%;
-    width: 200px;
+    width: 20%;
     background-color:yellow;
     height: 50px;
 }
