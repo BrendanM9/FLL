@@ -24,10 +24,10 @@ body{
 }
 #redscore{
     position:absolute;
-    height:50px;
-    width:50px;
+    height:5%;
+    width:5%;
     background-color:white;
-    left:35px;
+    left:10%;
     top:35px;
     z-index:2;
     font-size: 24px;
@@ -35,10 +35,10 @@ body{
 }
 #bluescore{
     position:absolute;
-    height:50px;
-    width:50px;
+    height:5%;
+    width:5%;
     background-color:white;
-    left:93%;
+    left:90%;
     top:35px;
     z-index:2;
     font-size: 24px;
