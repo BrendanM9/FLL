@@ -1,0 +1,155 @@
+{
+    "Masterpiece": [
+        {
+            "name": "equipmentInspectionBonus",
+            "point_value": 20
+        },
+        {
+            "name": "cinema3d",
+            "point_value": 20
+        },
+        {
+            "theaterscene":[
+            {
+                "name": "tSBlue",
+                "point_value": 10
+            },
+            {
+                "name": "tSPink",
+                "point_value": 20
+            },
+            {
+                "name": "tSOrange",
+                "point_value": 30
+            }],
+        },
+        {
+            "theaterscene2":[
+            {
+                "name": "tSBlue2",
+                "point_value": 20
+            },
+            {
+                "name": "tSPink2",
+                "point_value": 30
+            },
+            {
+                "name": "tSOrange2",
+                "point_value": 10
+            }]
+        },
+        {
+            "name": "immersiveExperience",
+            "point_value": 20
+        },
+        {
+            "name": "masterpiece1",
+            "point_value": 10 
+        },
+        {
+            "name": "masterpiece2",
+            "point_value": 20 
+        },
+        {
+            "name": "augmentedRealityStatue",
+            "point_value": 30 
+        }, 
+        {
+            "name": "musicConcertLightsAndSound1",
+            "point_value": 10 
+        },
+        {
+            "name": "musicConcertLightsAndSound2",
+            "point_value": 10 
+        },
+        {
+            "name": "hologramPerformer",
+            "point_value": 20 
+        },   
+        {
+            "rollingCamera": [
+            {
+                "name": "darkBlue",
+                "point-value": "10"
+            },
+            {
+                "name": "dark/medBlue",
+                "point-value": "20"
+            },
+            {
+                "name": "dark/med/lightBlue",
+                "point-value": "30"
+            }]
+        },
+        {
+            "name": "movieSet1",
+            "point_value": "10"
+        }, 
+        {
+            "name": "movieSet2",
+            "point_value": "10"
+        }, 
+        {
+            "soundMixer": [
+            {
+                "name": "smOne",
+                "point_value": 10
+            },
+            {
+                "name": "smTwo",
+                "point_value": 20
+            },
+            {
+                "name": "smThree",
+                "point_value": 30
+            }
+            ]
+        },
+        {
+            "lightShow":[
+            {
+                "name": "lSYellow",
+                "point_value": 10
+            },
+            {
+                "name": "lSGreen",
+                "point_value": 20
+            },
+            {
+                "name": "lSBlue",
+                "point_value": 30
+            }
+            ]
+        },
+        {
+            "name": "vrArtist1",
+            "point_value": 10
+        },
+        {
+            "name": "vrArtist2",
+            "point_value": 20
+        }
+    ]
+}
+
+    craftCreator1 = 0
+    craftCreator2 = 0
+    audienceDeliveryN1 = [1, 2, 3, 4, 5, 6, 7]
+    audienceDeliveryN2 = [1, 2, 3, 4, 5, 6, 7]
+    expertDeliveryN1 = [1, 2, 3, 4, 5]
+    precisionTokens = [1, 2, 3, 4, 5, 6]
+    graciousProfessionalism = [2, 3, 4]
+
+    craftCreator1S = [0, 10]
+    craftCreator2S = [0, 20]
+    audienceDelivery1P = [0, 1, 2, 3, 4, 5, 6, 7]
+    audienceDelivery1S = [0, 5, 10, 15, 20, 25, 30, 35]
+    audienceDelivery2P = [1, 2, 3, 4, 5, 6, 7]
+    audienceDelivery2S = [0, 5, 10, 15, 20, 25, 30, 35]
+    expertDelivery1P = [0, 1, 2, 3, 4, 5]
+    expertDelivery1S = [0, 10, 20, 30, 40, 50]
+    precisionTokensP = [0, 1, 2, 3, 4, 5, 6]
+    precisionTokensS = [0, 10, 15, 25, 35, 50, 50]
+    graciousProfessionalismS = [2, 3, 4]
+
+print(points.soundMixerS[1])
