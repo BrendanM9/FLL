@@ -18,7 +18,7 @@
         <div id="bluenumber">
         </div>
         <div id="bluepoints">
-          <div id="bluescore"><p>0</p></div>
+          <div id="bluescore"><p>10</p></div>
         </div>
         <div id="bluebonus">
         </div>
@@ -31,7 +31,7 @@
         <div id="rednumber">
         </div>
         <div id="redpoints">
-          <div id="redscore"><p>0</p></div>
+          <div id="redscore"><p>10</p></div>
         </div>
         <div id="redbonus">
         </div>
@@ -56,6 +56,7 @@
         });
         document.getElementById("go").addEventListener("click", function () {
             allGo();
+            timer=60*2.49;
         });
       function stopTimer(){
         display.innerHTML = "00:00";
@@ -72,8 +73,10 @@
           display.textContent = minutes + ":" + seconds;
 
           if (--timer < 0) {
-            timer = duration;
-            display.innerHTML = "02:30";
+            
+            //timer = duration;
+            display.innerHTML = "00:00";
+            underReview();
           }
         }, 1000);
       }
