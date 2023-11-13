@@ -6,6 +6,26 @@
     <link rel="stylesheet" href="TMS.css">
   </head>
   <body>
+    <!--<div class="round-time-bar" style="--duration: 10;">
+      <div></div>
+    </div>
+    
+    <div class="round-time-bar" style="--duration: 5;">
+      <div></div>
+    </div>
+    
+    <div class="round-time-bar" data-style="smooth" style="--duration: 5;">
+      <div></div>
+    </div>
+    
+    <div class="round-time-bar" data-color="blue" style="--duration: 12;">
+      <div></div>
+    </div>
+    
+    <div class="round-time-bar" data-color="blue" data-style="fixed" style="--duration: 3;">
+      <div></div>
+    </div>
+    <button id="restart-button">restart timers</button>-->
     <button id="review" accesskey="1">Under Review</button>
     <button id="go" accesskey="2">All Systems Go</button>
     <button id="start" accesskey="G" style="display:none">Start</button>
@@ -37,7 +57,19 @@
         </div>
       </div>
     </div>
+
     <script>
+      /*
+      const button = document.querySelector("#restart-button");
+const bars = document.querySelectorAll(".round-time-bar");
+button.addEventListener("click", () => {
+  bars.forEach((bar) => {
+    bar.classList.remove("round-time-bar");
+    bar.offsetWidth;
+    bar.classList.add("round-time-bar");
+  });
+});
+*/
       var fiveMinutes = 60 * 2.49,
         display = document.querySelector('#time');
         

@@ -128,24 +128,87 @@
         {
             "name": "vrArtist2",
             "point_value": 20
+        },
+        {
+            "name": "craftCreator1",
+            "point_value": 10
+        },
+        {
+            "name": "craftCreator2",
+            "point_value": 20
+        },
+        {
+            "audienceDelivery1": [
+                {
+                   "name": "1 Member",
+                   "point_value": 5
+                },
+                {
+                    "name": "2 Member",
+                    "point_value": 10
+                },
+                {
+                    "name": "3 Member",
+                    "point_value": 15
+                },
+                {
+                    "name": "4 Member",
+                    "point_value": 20
+                },
+                {
+                    "name": "5 Member",
+                    "point_value": 25
+                },
+                {
+                    "name": "6 Member",
+                    "point_value": 30
+                },
+                {
+                    "name": "7 Member",
+                    "point_value": 35
+                }
+            ]
+        },
+        {
+            "audienceDelivery2": [
+                {
+                   "name": "1 Member",
+                   "point_value": 5
+                },
+                {
+                    "name": "2 Member",
+                    "point_value": 10
+                },
+                {
+                    "name": "3 Member",
+                    "point_value": 15
+                },
+                {
+                    "name": "4 Member",
+                    "point_value": 20
+                },
+                {
+                    "name": "5 Member",
+                    "point_value": 25
+                },
+                {
+                    "name": "6 Member",
+                    "point_value": 30
+                },
+                {
+                    "name": "7 Member",
+                    "point_value": 35
+                }
+            ]
         }
     ]
 }
 
-    craftCreator1 = 0
-    craftCreator2 = 0
-    audienceDeliveryN1 = [1, 2, 3, 4, 5, 6, 7]
-    audienceDeliveryN2 = [1, 2, 3, 4, 5, 6, 7]
     expertDeliveryN1 = [1, 2, 3, 4, 5]
     precisionTokens = [1, 2, 3, 4, 5, 6]
     graciousProfessionalism = [2, 3, 4]
 
-    craftCreator1S = [0, 10]
-    craftCreator2S = [0, 20]
-    audienceDelivery1P = [0, 1, 2, 3, 4, 5, 6, 7]
-    audienceDelivery1S = [0, 5, 10, 15, 20, 25, 30, 35]
-    audienceDelivery2P = [1, 2, 3, 4, 5, 6, 7]
-    audienceDelivery2S = [0, 5, 10, 15, 20, 25, 30, 35]
+    
     expertDelivery1P = [0, 1, 2, 3, 4, 5]
     expertDelivery1S = [0, 10, 20, 30, 40, 50]
     precisionTokensP = [0, 1, 2, 3, 4, 5, 6]

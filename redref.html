@@ -6,41 +6,69 @@
     </head>
     <body>
         <h1>First Lego League Red Scoring</h1>
-        <input type="checkbox" id="inspect">Equipment Inspection<br>
-        <input type="checkbox" id="3d">3D Cinema<br>
-        <select id="theater_scene">
-            <optgroup label="Color of Theater Scene">
-                <option id="null"></option>
-                <option id="blue">Blue</option>
-                <option id="pink">Pink</option>
-                <option id="orange">Orange</option>
-            </optgroup>
-        </select>Theater Scene Color<br>
-        <input type="checkbox" id="immersive">Immersive Experience<br>
-        <input type="checkbox" id="masterpiece">Masterpiece<br>
-        <input type="checkbox" id="masterpiece1">Masterpiece with Pedestal<br>
-        <input type="checkbox" id="ar_statue">Augmented Reality Statue<br>
-        <input type="checkbox" id="concert_light">Music Concert Lights<br>
-        <input type="checkbox" id="concert_sound">Music Concert Sound<br>
-        <input type="checkbox" id="hologram">Hologram Performer<br>
-        <select id="camera">
-            <optgroup label="Camera Color">
-                <option id="null"></option>
-                <option id="dark">Dark Blue</option>
-                <option id="mid">Medium Blue</option>
-                <option id="light">Light Blue</option>
-            </optgroup>
-        </select>Rolling Camera Color<br>
-        <input type="checkbox" id="movie_set_boat">Boat is Touching Mat: Movie Set<br>
-        <input type="checkbox" id="movie_set_camera">Camera is Touching Mat: Movie Set<br>
-        <select id="mixer">
-            <optgroup label="Number of Sliders Raised">
-                <option id="null"></option>
-                <option id="1">1</option>
-                <option id="2">2</option>
-                <option id="3">3</option>
-            </optgroup>
-        </select>Number of Sliders Raised: Mixer Console<br>
-
+        <form>
+            <input type="checkbox" id="inspect" value="1">Equipment Inspection<br>
+            <input type="checkbox" id="3d">3D Cinema<br>
+            <select id="theater_scene">
+                <optgroup label="Color of Theater Scene">
+                    <option id="null" value="0"></option>
+                    <option id="blue" value="1">Blue</option>
+                    <option id="pink" value="2">Pink</option>
+                    <option id="orange" value="3">Orange</option>
+                </optgroup>
+            </select>Theater Scene Color<br>
+            <input type="checkbox" id="immersive">Immersive Experience<br>
+            <input type="checkbox" id="masterpiece">Masterpiece<br>
+            <input type="checkbox" id="masterpiece1">Masterpiece with Pedestal<br>
+            <input type="checkbox" id="ar_statue">Augmented Reality Statue<br>
+            <input type="checkbox" id="concert_light">Music Concert Lights<br>
+            <input type="checkbox" id="concert_sound">Music Concert Sound<br>
+            <input type="checkbox" id="hologram">Hologram Performer<br>
+            <select id="camera">
+                <optgroup label="Camera Color">
+                    <option id="null"></option>
+                    <option id="dark">Dark Blue</option>
+                    <option id="mid">Medium Blue</option>
+                    <option id="light">Light Blue</option>
+                </optgroup>
+            </select>Rolling Camera Color<br>
+            <input type="checkbox" id="movie_set_boat">Boat is Touching Mat: Movie Set<br>
+            <input type="checkbox" id="movie_set_camera">Camera is Touching Mat: Movie Set<br>
+            <select id="mixer">
+                <optgroup label="Number of Sliders Raised">
+                    <option id="null"></option>
+                    <option id="1">1</option>
+                    <option id="2">2</option>
+                    <option id="3">3</option>
+                </optgroup>
+            </select>Number of Sliders Raised: Mixer Console<br>
+        <button id="submit">Go!</button>
+        </form>
+        <script>
+            var goEl = document.getElementById("submit");
+            var calc = function(){
+                var equipInspect = document.getElementById("inspect").value;
+                var cinema = document.getElementById("3d").value;
+                var theater = document.getElementById("theater_scene");
+                var score = 0;
+                if(equipInspect === null){
+                    score += 20;
+                }
+                if(cinema === null){
+                    score += 20;
+                }
+                if(theater === "0"){
+                    score += 0;
+                } else if(theater === "1"){
+                    score += 10;
+                } else if(theater === "2"){
+                    score += 20;
+                } else if(theater === "3"){
+                    score += 30;
+                } 
+                console.log(score);
+            }
+            goEl.addEventListener("click", calc);
+        </script>
     </body>
 </html>
