@@ -29,7 +29,13 @@
     <button id="review" accesskey="1">Under Review</button>
     <button id="go" accesskey="2">All Systems Go</button>
     <button id="start" accesskey="G" style="display:none">Start</button>
-    <img src="IMG_0857.png" style="z-index:0;" id="test-pattern">
+    <!--<img src="IMG_0857.png" style="z-index:0;" id="test-pattern">-->
+    <div>
+      <video id="vid"></video>
+  </div>
+  <button id="but" autoplay accesskey="V">
+    Open WebCam
+</button>
     <div id="scorebar">
       <div id="matchNo">
         Match 1 of 15
@@ -59,6 +65,30 @@
     </div>
 
     <script>
+          document.addEventListener("DOMContentLoaded", () => {
+        let but = document.getElementById("but");
+        let video = document.getElementById("vid");
+        let mediaDevices = navigator.mediaDevices;
+        vid.muted = true;
+        but.addEventListener("click", () => {
+
+            // Accessing the user camera and video.
+            mediaDevices
+                .getUserMedia({
+                    video: true,
+                    audio: false,
+                })
+                .then((stream) => {
+
+                    //Changing the source of video to current stream
+                    video.srcObject = stream;
+                    video.addEventListener("loadedmetadata", () => {
+                        video.play();
+                    });
+                })
+                .catch(alert)
+        });
+    });
       /*
       const button = document.querySelector("#restart-button");
 const bars = document.querySelectorAll(".round-time-bar");
