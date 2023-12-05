@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <body>
+        <!--<form action="/py/ScoreMatch.py" method="post">-->
+        <form action="result.html">
+            <input name="teamr1">Red Score
+            <input name="teamb1">Blue Score
+            <input type="hidden" name="match" value = "1">
+            <input type="hidden" name="bteam" value="01">
+            <input type="hidden" name="rteam" value="01">
+            <button>Submit</button>
+        </form>
+        <script>
+            var myUrl = window.location.href
+            var iterator = 0
+            var match = 0
+            while(url.substring(iterator, iterator+7)!== "Number1="){
+                iterator+=1
+            }
+            iterator+=7
+            match = url.substr(iterator, iterator)
+            console.log(match)
+        </script>
+    </body>
+    
+</html>

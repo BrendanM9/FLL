@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Match Results</title>
+    </head>
+    <body>
+        <div id="red">
+
+        </div>
+        <div id="blue">
+
+        </div>
+        <form id="myMatchNo" action="Post.html">
+            <div id="insertMatch"></div>
+            <input type="hidden" value="insert value here">
+            <input type="submit" value="Next Match">
+        </form>
+        <script type="module">
+            import data from "./teams.json" assert { type: 'json' }
+            import data1 from "./schedule.json" assert {type: 'json' }
+            console.log(data)
+            console.log(data1)
+            var redScore = 0
+            var blueScore = 0
+            var matchNo = 0
+            var blue1 = ""
+            var blue1No = 0
+            var red1 = ""
+            var red1No = 0
+            var url = window.location.href
+            console.log(url)
+            var iterator = 0
+            while(url.substring(iterator, iterator+7) !== "teamr1="){
+                iterator += 1
+            }
+            iterator+=7
+            redScore = url.substring(iterator, iterator+3)
+            console.log(redScore)
+            while(url.substring(iterator, iterator+7) !== "teamb1="){
+                iterator += 1
+            }
+            iterator += 7
+            blueScore = url.substring(iterator, iterator+3)
+            console.log(blueScore)
+            while(url.substring(iterator, iterator+6) !== "match="){
+                iterator += 1
+            }
+            iterator += 6
+            matchNo = url.substring(iterator, iterator+1)
+            console.log(matchNo)
+            var index = 0
+            console.log(data1.matches[index].number)
+            while(parseInt(data1.matches[index].number) !== parseInt(matchNo)){
+                index += 1
+            }
+            blue1No = data1.matches[index].teamb
+            red1No = data1.matches[index].teamr
+            var myIterate = 0
+            while(data.teams[myIterate].number !== blue1No){
+                myIterate += 1
+            }
+            blue1 = data.teams[myIterate].name
+            console.log(blue1No,",",blue1)
+            myIterate = 0
+            while(data.teams[myIterate].number !== red1No){
+                myIterate += 1
+            }
+            red1 = data.teams[myIterate].name
+            console.log(red1No,",",red1)
+            document.getElementById("red").innerHTML = "Team "+ red1No+ ": Score: "+ redScore
+            document.getElementById("blue").innerHTML = "Team "+ blue1No+ ": Score: "+ blueScore
+            document.getElementById("insertMatch").innerHTML = '<input type="hidden" value="'+matchNo+'" name="Number1">';
+        </script>
+    </body>
+</html>

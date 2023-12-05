@@ -1,0 +1,19 @@
+{
+    "matches": [
+        {
+            "number": 0
+        },
+        {
+            "number": 1,
+            "time": "9:00",
+            "teamb": 42767,
+            "teamr": 51586
+        },
+        {
+            "number": 2,
+            "time": "9:05",
+            "teamb": 51693,
+            "teamr": 53103
+        }
+    ]
+}

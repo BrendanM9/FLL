@@ -1,0 +1,48 @@
+{
+    "teams": [
+        {
+            "name": "Mystic Muffins",
+            "number": 42767
+        },
+        {
+            "name": "Ducky Dominators",
+            "number": 51586
+        },
+        {
+            "name": "Catastrophic",
+            "number": 51693
+        },
+        {
+            "name": "Kids from the South Part 2",
+            "number": 53103
+        },
+        {
+            "name": "The Nameless",
+            "number": 58489
+        },
+        {
+            "name": "The Energizers",
+            "number": 59546
+        },
+        {
+            "name": "The Masterminds",
+            "number": 51585
+        },
+        {
+            "name": "The Energy Engineers",
+            "number": 51587
+        },
+        {
+            "name": "Tectonic Plates",
+            "number": 51815
+        },
+        {
+            "name": "Broken Top Builders",
+            "number": 57610
+        },
+        {
+            "name": "Mystic Muffins Two",
+            "number": 59066
+        }
+    ]
+}
