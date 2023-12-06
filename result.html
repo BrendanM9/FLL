@@ -27,6 +27,7 @@
             var blue1No = 0
             var red1 = ""
             var red1No = 0
+            var pStatus
             var url = window.location.href
             console.log(url)
             var iterator = 0
@@ -48,13 +49,33 @@
             iterator += 6
             matchNo = url.substring(iterator, iterator+1)
             console.log(matchNo)
-            var index = 0
-            console.log(data1.matches[index].number)
-            while(parseInt(data1.matches[index].number) !== parseInt(matchNo)){
-                index += 1
+            while(url.substring(iterator, iterator+9) !== "practice="){
+                //console.log(url.substring(iterator, iterator+9))
+                iterator += 1
             }
-            blue1No = data1.matches[index].teamb
-            red1No = data1.matches[index].teamr
+            iterator += 9
+            pStatus = url.substring(iterator, iterator+1)
+            console.log(pStatus)
+            var myData
+            var practice1
+            var myPracticeJson = []
+            var index = 0
+            if(pStatus ==="y"){
+                practice1=1
+                while(parseInt(data1.matches[1].practice[index].number) !== parseInt(matchNo)){
+                    index += 1
+                }
+                blue1No = data1.matches[1].practice[index].teamb
+                red1No = data1.matches[1].practice[index].teamr
+            } else {
+                practice1 = 2
+            }
+            
+            //console.log(myPracticeJson)
+            
+            console.log(data1.matches[practice1].practice[3].number)
+            //console.log("Test:"+myPracticeJson[3].number)
+            
             var myIterate = 0
             while(data.teams[myIterate].number !== blue1No){
                 myIterate += 1

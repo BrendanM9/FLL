@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Red Results</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Red Match Results</h1>
+        <h2 id="points"></h2>
+        <script>
+            var url=window.location.href
+            var partOfUrl = ""
+            for(var index = 0; index < url.length; index++){
+                if(String(url.substring(index, (index+1))) === "1="){
+                    index += 2;
+                    partOfUrl = url.substring(index)
+                }else{
+                    index+= 1;
+                }
+            }
+            console.log(partOfUrl)
+        </script>
+    </body>
+</html>

@@ -2,24 +2,48 @@
 <html>
     <body>
         <!--<form action="/py/ScoreMatch.py" method="post">-->
-        <form action="result.html">
+        <form id="myForm" action="result.html">
             <input name="teamr1">Red Score
             <input name="teamb1">Blue Score
-            <input type="hidden" name="match" value = "1">
+            <div id="myMatches">
+                <input type="hidden" name="match" value = "1">
+            </div>
             <input type="hidden" name="bteam" value="01">
             <input type="hidden" name="rteam" value="01">
+            <input type="hidden" name="practice" value="y">
             <button>Submit</button>
         </form>
         <script>
+            
             var myUrl = window.location.href
+            console.log(myUrl)
             var iterator = 0
             var match = 0
-            while(url.substring(iterator, iterator+7)!== "Number1="){
+            while(myUrl.substring(iterator, iterator+8)!== "Number1="){
+                //console.log(myUrl.substring(iterator, iterator+8))
                 iterator+=1
             }
-            iterator+=7
-            match = url.substr(iterator, iterator)
+            iterator+=8
+            match = myUrl.substr(iterator, iterator)
             console.log(match)
+            match = parseInt(match)
+            match += 1;
+            document.getElementById("myMatches").innerHTML = '<input type="hidden" name="match" value = "'+match+'">'
+    let deleteForm = document.getElementById('myForm');
+
+    deleteForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (confirm('Are you ready to post scores?')) {
+            deleteForm.submit();
+        }
+      });
+
+            function check(event){
+                event.preventDefault()
+                var redTeam = document.getElementById("teamr1").value
+                console.log(redTeam)
+                document.getElementById("myForm").requestSubmit()
+            }
         </script>
     </body>
     

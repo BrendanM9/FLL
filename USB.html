@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>USB Camera Test</title>
+    </head>
+    <body>
+        <div class="monitor"></div>
+        <script>
+            navigator.usb.requestDevice()
+            .then(device => {
+                console.log(device.productName);
+                console.log(device.manufacturerName);
+            })
+            .catch(error => {console.error(error)})
+            //canon usb = 324a    
+        </script>
+    </body>
+</html>

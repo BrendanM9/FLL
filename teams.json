@@ -1,48 +1,76 @@
 {
     "teams": [
         {
-            "name": "Mystic Muffins",
-            "number": 42767
+            "number": 42767,
+            "name": "Mystic Muffins"
         },
         {
-            "name": "Ducky Dominators",
-            "number": 51586
+            "number": 51586,
+            "name": "The Midnight Makers"
         },
         {
-            "name": "Catastrophic",
-            "number": 51693
+            "number": 51587,
+            "name": "The B.R.I.C.K. Alliance"
         },
         {
-            "name": "Kids from the South Part 2",
-            "number": 53103
+            "number": 51815,
+            "name": "The L.E.A.G.U.E"
         },
         {
-            "name": "The Nameless",
-            "number": 58489
+            "number": 57610,
+            "name": "Broken Top Builders"
         },
         {
-            "name": "The Energizers",
-            "number": 59546
+            "number": 60142,
+            "name": "The Star Bots"
         },
         {
-            "name": "The Masterminds",
-            "number": 51585
+            "number": 61609,
+            "name": "Double O Dog Pack"
         },
         {
-            "name": "The Energy Engineers",
-            "number": 51587
+            "number": 62271,
+            "name": "St. Francis Prism"
         },
         {
-            "name": "Tectonic Plates",
-            "number": 51815
+            "number": 62796,
+            "name": "RPA 62796"
         },
         {
-            "name": "Broken Top Builders",
-            "number": 57610
+            "number": 63351,
+            "name": "JETM"
         },
         {
-            "name": "Mystic Muffins Two",
-            "number": 59066
+            "number": 63525,
+            "name": "DIY Cave Stalagmites"
+        },
+        {
+            "number": 64184,
+            "name": "Flaming Dragons"
+        },
+        {
+            "number": 64213,
+            "name": "Banana Squad"
+        },
+        {
+            "number": 64393,
+            "name": "Captiosus"
+        },
+        {
+            "number": 64394,
+            "name": "Snooze Button"
+        },
+        {
+            "number": 64395,
+            "name": "Luminite"
+        },
+        {
+            "number": 64439,
+            "name": "RPA 64439"
+        },
+        {
+            "number": 64440,
+            "name": "RPA 64440"
         }
     ]
 }

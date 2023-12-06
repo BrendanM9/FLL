@@ -4,16 +4,231 @@
             "number": 0
         },
         {
-            "number": 1,
-            "time": "9:00",
-            "teamb": 42767,
-            "teamr": 51586
+            "practice": [
+                {
+                    "number": 1,
+                    "time": "9:30",
+                    "teamb": 51587,
+                    "teamr": 63351
+                },
+                {
+                    "number": 2,
+                    "time": "9:37",
+                    "teamb": 61609,
+                    "teamr": 51586
+                },
+                {
+                    "number": 3,
+                    "time": "9:45",
+                    "teamb": 57610,
+                    "teamr": 42767
+                },
+                {
+                    "number": 4,
+                    "time": "9:52",
+                    "teamb": 62271,
+                    "teamr": 64394
+                },
+                {
+                    "number": 5,
+                    "time": "10:00",
+                    "teamb": 64439,
+                    "teamr": 63525
+                },
+                {
+                    "number": 6,
+                    "time": "10:07",
+                    "teamb": 64395,
+                    "teamr": 64440
+                },
+                {
+                    "number": 7,
+                    "time": "10:15",
+                    "teamb": 60142,
+                    "teamr": 64393
+                },
+                {
+                    "number": 8,
+                    "time": "10:22",
+                    "teamb": 64213,
+                    "teamr": 51815
+                },
+                {
+                    "number": 9,
+                    "time": "10:30",
+                    "teamb": 64184,
+                    "teamr": 62796
+                }
+            ]
         },
         {
-            "number": 2,
-            "time": "9:05",
-            "teamb": 51693,
-            "teamr": 53103
+            "competition": [
+                {
+                    "number": 0
+                },
+                {
+                    "number": 1,
+                    "time": "11:00",
+                    "teamb": 64394,
+                    "teamr": 64439
+                },
+                {
+                    "number": 2,
+                    "time": "11:07",
+                    "teamb": 63535,
+                    "teamr": 62271
+                },
+                {
+                    "number": 3,
+                    "time": "11:15",
+                    "teamb": 64440,
+                    "teamr":60142
+                },
+                {
+                    "number": 4,
+                    "time":"11:22",
+                    "teamb":64393,
+                    "teamr":64395
+                },
+                {
+                    "number":5,
+                    "time":"11:30",
+                    "teamb":51815,
+                    "teamr":51587
+                },
+                {
+                    "number": 6,
+                    "time":"11:37",
+                    "teamb":62796,
+                    "teamr":64213
+                },
+                {
+                    "number":7,
+                    "time":"11:45",
+                    "teamb":63351,
+                    "teamr":61609
+                },
+                {
+                    "number":8,
+                    "time":"11:52",
+                    "teamb":51586,
+                    "teamr":57610
+                },
+                {
+                    "number":9,
+                    "time":"12:00",
+                    "teamb":42767,
+                    "teamr":64184
+                },
+                {
+                    "number":10,
+                    "time":"12:15",
+                    "teamb":64395,
+                    "teamr":64393
+                },
+                {
+                    "number":11,
+                    "time":"12:22",
+                    "teamb":60142,
+                    "teamr":63525
+                },
+                {
+                    "number":12,
+                    "time":"1:00",
+                    "teamb":64213,
+                    "teamr":62796
+                },
+                {
+                    "number":13,
+                    "time":"1:07",
+                    "teamb":61609,
+                    "teamr":51815
+                },
+                {
+                    "number":14,
+                    "time":"1:15",
+                    "teamb":51587,
+                    "teamr":51586
+                },
+                {
+                    "number":15,
+                    "time":"1:22",
+                    "teamb":57610,
+                    "teamr":63351
+                },
+                {
+                    "number":16,
+                    "time":"1:30",
+                    "teamb":62271,
+                    "teamr":42767
+                },
+                {
+                    "number":17,
+                    "time":"1:37",
+                    "teamb":64184,
+                    "teamr":64394
+                },
+                {
+                    "number":18,
+                    "time":"1:45",
+                    "teamb":64439,
+                    "teamr":62796
+                },
+                {
+                    "number":19,
+                    "time":"2:15",
+                    "teamb":64440,
+                    "teamr":51587
+                },
+                {
+                    "number":20,
+                    "time":"2:22",
+                    "teamb":63525,
+                    "teamr":64395
+                },
+                {
+                    "number":21,
+                    "time":"2:30",
+                    "teamb":63351,
+                    "teamr":64184
+                },
+                {
+                    "number":22,
+                    "time":"2:37",
+                    "teamb":51815,
+                    "teamr":57610
+                },
+                {
+                    "number":23,
+                    "time":"2:45",
+                    "teamb":51586,
+                    "teamr":62271
+                },
+                {
+                    "number":24,
+                    "time":"2:52",
+                    "teamb":64394,
+                    "teamr":61609
+                },
+                {
+                    "number":25,
+                    "time":"3:00",
+                    "teamb":42767,
+                    "teamr":64439
+                },
+                {
+                    "number":26,
+                    "time":"3:07",
+                    "teamb":60142,
+                    "teamr":64393
+                },
+                {
+                    "number":27,
+                    "time":"3:15",
+                    "teamb":64213,
+                    "teamr":64440
+                }
+            ]
         }
     ]
 }

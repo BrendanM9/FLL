@@ -1,16 +1,18 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import time
+import liveScoreRed
+import liveScoreBlue
 #def do_GET():
-'''
+
 def run(server_class=HTTPServer, handler_class=BaseHTTPRequestHandler):
     server_address = ('', 8000)
     httpd = server_class(server_address, handler_class)
     httpd.serve_forever()
-'''
+
 import http.server
 import socketserver
 
-PORT = 80
+PORT = 8080
 
 Handler = http.server.SimpleHTTPRequestHandler
 
