@@ -6,7 +6,7 @@
     <body>
         <div class="monitor"></div>
         <script>
-            navigator.usb.requestDevice()
+            navigator.usb.requestDevice({ filters: [{ vendorId: 0x324a }] })
             .then(device => {
                 console.log(device.productName);
                 console.log(device.manufacturerName);
