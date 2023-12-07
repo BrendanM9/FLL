@@ -7,11 +7,11 @@
         <div class="monitor"></div>
         <script>
             navigator.usb.requestDevice({ filters: [{ vendorId: 0x324a }] })
-            .then(device => {
-                console.log(device.productName);
-                console.log(device.manufacturerName);
-            })
-            .catch(error => {console.error(error)})
+.then(device => {
+  console.log(device.productName);      // "Arduino Micro"
+  console.log(device.manufacturerName); // "Arduino LLC"
+})
+.catch(error => { console.error(error); });
             //canon usb = 324a    
         </script>
     </body>
