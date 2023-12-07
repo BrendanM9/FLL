@@ -6,12 +6,17 @@
     <body>
         <div class="monitor"></div>
         <script>
-            navigator.usb.requestDevice({ filters: [{ vendorId: 0x324a }] })
-.then(device => {
-  console.log(device.productName);      // "Arduino Micro"
-  console.log(device.manufacturerName); // "Arduino LLC"
-})
-.catch(error => { console.error(error); });
+            JS
+
+
+navigator.usb.getDevices().then((devices) => {
+  console.log(`Total devices: ${devices.length}`);
+  devices.forEach((device) => {
+    console.log(
+      `Product name: ${device.productName}, serial number ${device.serialNumber}`,
+    );
+  });
+});
             //canon usb = 324a    
         </script>
     </body>
