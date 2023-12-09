@@ -6,17 +6,12 @@
     <body>
         <div class="monitor"></div>
         <script>
-            
-
-
-navigator.usb.getDevices().then((devices) => {
-  console.log(`Total devices: ${devices.length}`);
-  devices.forEach((device) => {
-    console.log(
-      `Product name: ${device.productName}, serial number ${device.serialNumber}`,
-    );
-  });
-});
+            navigator.usb.requestDevice()
+            .then(device => {
+                console.log(device.productName);
+                console.log(device.manufacturerName);
+            })
+            .catch(error => {console.error(error)})
             //canon usb = 324a    
         </script>
     </body>
