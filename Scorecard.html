@@ -37,7 +37,7 @@
           <source src="buzzer.mp3">
         </audio>
         <audio id="laser">
-          <source id="laser.mp3">
+          <source src="laser.mp3">
         </audio>
       </div>
       <div id="blue">
@@ -87,7 +87,7 @@
           seconds = seconds < 10 ? "0" + seconds : seconds;
 
           display.textContent = minutes + ":" + seconds;
-          if (timer = 30){
+          if (timer === 30){
             laser.play()
             console.log("30")
           } else if (timer < 0) {
