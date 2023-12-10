@@ -33,6 +33,9 @@
       <div id="timer">
         <div id="under-review">Hello</div>
         <div id="timebox"><div id="time">02:30</div></div>
+        <audio id="buzzer">
+          <source src="buzzer.mp3">
+        </audio>
       </div>
       <div id="blue">
         <div id="bluenumber">
@@ -45,6 +48,7 @@
       </div>
     </div>
     <script>
+      var buzzerId = document.getElementById("buzzer")
       var fiveMinutes = 60 * 2.49,
         display = document.querySelector('#time');
         
@@ -80,7 +84,7 @@
           display.textContent = minutes + ":" + seconds;
 
           if (--timer < 0) {
-            
+            buzzer.play()
             //timer = duration;
             display.innerHTML = "00:00";
             underReview();
