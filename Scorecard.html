@@ -89,13 +89,15 @@
           display.textContent = minutes + ":" + seconds;
           if (--timer === 30){
             laser.play()
-          }
-          if (timer < 0) {
+            console.log("30")
+          } else if (timer < 0) {
             buzzer.play()
             //timer = duration;
             display.innerHTML = "00:00";
             underReview();
-            stopTimer();s
+            console.log(1)
+            stopTimer();
+            console.log(2)
             
           }
         }, 1000);
