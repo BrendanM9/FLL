@@ -87,10 +87,10 @@
           seconds = seconds < 10 ? "0" + seconds : seconds;
 
           display.textContent = minutes + ":" + seconds;
-          if (timer === 30){
+          if (--timer === 30){
             laser.play()
           }
-          if (--timer < 0) {
+          if (timer < 0) {
             buzzer.play()
             //timer = duration;
             display.innerHTML = "00:00";
