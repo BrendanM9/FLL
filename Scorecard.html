@@ -76,6 +76,7 @@
       function stopTimer(){
         display.innerHTML = "00:00";
         timer=60*2.49;
+        clearInterval(startTimer())
       }
       function startTimer(duration, display) {
         var timer = duration, minutes, seconds;
@@ -98,7 +99,6 @@
             console.log(1)
             stopTimer();
             console.log(2)
-            clearInterval(startTimer)
           }
           timer--
         }, 1000);
