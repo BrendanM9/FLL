@@ -76,7 +76,7 @@
       function stopTimer(){
         display.innerHTML = "00:00";
         timer=60*2.49;
-        clearInterval(startTimer())
+        clearInterval(intervalId)
       }
       function startTimer(duration, display) {
         var timer = duration, minutes, seconds;
